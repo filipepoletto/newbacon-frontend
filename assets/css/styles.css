@@ -354,14 +354,14 @@ footer .social.twitter {
     }
     header .navbar.active .navbar-collapse > div {
         position: absolute;
-        bottom: 0;
+        bottom: 30px;
         left: 0;
         right: 0;
         display: flex;
         flex-flow: column;
         align-items: center;
         justify-content: center;
-        height: calc(30vh - 30px);
+        height: 30vh;
         padding: 0 30px;
         background: var(--color-pink);
         animation: 2s ease 0s 1 fadeInAnimation;
