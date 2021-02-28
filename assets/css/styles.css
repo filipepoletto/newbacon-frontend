@@ -361,7 +361,7 @@ footer .social.twitter {
         flex-flow: column;
         align-items: center;
         justify-content: center;
-        height: 30vh;
+        height: calc(30vh - 30px);
         padding: 0 30px;
         background: var(--color-pink);
         animation: 2s ease 0s 1 fadeInAnimation;
@@ -387,7 +387,7 @@ footer .social.twitter {
     }
     .navbar.active .navbar-toggler-icon {
         width: 25px;
-        background: url('../images/icon-toggler-close.png') no-repeat center;
+        background: url('../images/icon-toggler-close.png') no-repeat center !important;
     }
     header .navbar-nav > .nav-item:first-child,
     header .navbar-nav > .nav-item:last-child {
@@ -439,13 +439,16 @@ footer .social.twitter {
     footer .container > .row:last-child {
         flex-direction: column-reverse;
     }
-    footer .nav-item.active .submenu {
-        position: static;
-        display: block;
+    footer .navbar-nav > .nav-item {
+        font-weight: 600;
+    }
+    footer .submenu {
+        display: inline-block;
         width: 200px;
-        margin: 0;
         padding: 20px 0 0;
-        box-shadow: none;
+        list-style: none;
+        font-weight: 300;
+        opacity: 1;
     }
     footer .lang strong {
         font-size: 18px;
