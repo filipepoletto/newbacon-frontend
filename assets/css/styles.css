@@ -382,12 +382,14 @@ footer .social.twitter {
     }
     .navbar .navbar-toggler-icon {
         width: 35px;
-        background: url('../images/icon-toggler-open.png') no-repeat center;
+        background-image: url('../images/icon-toggler-open.png');
+        background-repeat: no-repeat;
+        background-position: center;
         transition: all 0.3s ease-in-out;
     }
-    .navbar.active .navbar-toggler-icon {
+    .navbar .navbar-toggler-icon.active {
         width: 25px;
-        background: url('../images/icon-toggler-close.png') no-repeat center !important;
+        background-image: url('../images/icon-toggler-close.png') !important;
     }
     header .navbar-nav > .nav-item:first-child,
     header .navbar-nav > .nav-item:last-child {

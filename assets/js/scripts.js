@@ -1,9 +1,11 @@
 function headerNavbar() {
     const navToggle = document.querySelector('header > nav');
     const navButton = navToggle.querySelector('.navbar-toggler');
+    const navButtonIcon = navButton.querySelector('.navbar-toggler-icon');
 
     navButton.addEventListener('click', function () {
         navToggle.classList.toggle('active');
+        navButtonIcon.classList.toggle('active');
     });
 }
 headerNavbar();
